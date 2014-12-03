@@ -1,0 +1,37 @@
+import os
+
+#open a file
+
+fo = open("karan.txt","wb")
+print "Name of file: ", fo.name
+print "Status of file: ", fo.closed
+print "Opening mode: ", fo.mode
+
+#writing to a file
+
+fo.write("helloo this is python program")
+
+#reading from a file
+
+fo = open("karan.txt", "r+")
+str = fo.read(100)
+print "Contents in the file are: ", str
+
+#check current position
+
+position = fo.tell();
+print "Current position: ", position
+
+#Reposition pointer at the beginning 
+
+position = fo.seek(0,0)
+str = fo.read(100)
+print "Contents from are: ", str
+
+#rename file
+
+os.rename("karan.txt", "karan1.txt")
+
+#remove file
+
+os.remove("karan1.txt")
