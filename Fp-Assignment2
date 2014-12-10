@@ -1,0 +1,8 @@
+# Write a function to calculate product of all numbers in a list
+
+def multiplication(lst):
+	print reduce(lambda x,y: x*y,lst)
+
+lst = [1,2,3,4,5]
+print lst
+multiplication(lst) 
