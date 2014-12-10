@@ -1,0 +1,18 @@
+#Write a function which -> Gets a list of words as input
+#                          -> Converts every word in the list to lower case
+#                          -> Removes all words which contains numbers
+#                          -> Returns the list
+def low(li):
+	li = map(fun,li)
+	li = filter(None,li)
+	print li
+	
+
+def fun(x):
+	if x.isalpha():
+		return x.lower()
+	else:
+		return False
+
+lst = ['KARAN123','SHREEMAY','AVINASH12','raj']
+low(lst)
