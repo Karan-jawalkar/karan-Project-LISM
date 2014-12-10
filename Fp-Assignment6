@@ -1,0 +1,10 @@
+# Write a function which -> Gets a list of words as input
+#                        -> Converts every word in the list to lower case and returns list
+
+def make_lower(x):
+		return x.lower()
+
+li = ['KARAN', 'AVINASH', 'SHREEMAY']
+
+li = map(make_lower,li)
+print li
